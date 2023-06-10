@@ -1,0 +1,20 @@
+.downlaod-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    background-color: var(--downloadBtn-color);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-weight: 600;
+    padding: 5px 7px;
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover{
+    background-color: var(--downloadBtn-color-hover);        
+    }
+   }

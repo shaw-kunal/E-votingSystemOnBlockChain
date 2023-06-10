@@ -1,0 +1,21 @@
+page:
+    Home page
+    About page
+    Login page
+    Registration page
+    VoterRegistration
+    votigArea
+    Result
+Component:
+   Navbar
+   sideBar
+   footer
+   testimonial
+   NewsLetter
+grivence :
+navbar 
+footer
+fill form with id 
+text votigArea
+
+
