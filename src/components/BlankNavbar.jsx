@@ -18,7 +18,6 @@ display: flex;
 align-items: center;
 justify-content: start;
 gap:20px;
-
 `
 
 const Left = styled.div`

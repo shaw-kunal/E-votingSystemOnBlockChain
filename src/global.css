@@ -7,7 +7,10 @@ text-decoration: none;
 outline: none;    
     
 }
-:root{--navbar-color:#225354;
+:root{
+    --navbar-color: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    --navbar-color:#225354;
+
     --grey-color:rgb(79, 78, 78);
     --grey-border-color:rgb(202, 194, 194);
     --sideBar-color:#0941ba;
@@ -43,8 +46,27 @@ outline: none;
     font-weight: 600px;
     position: absolute;
     left:1px;
+}
 
+.downArrow{
+    transform: all 1s ease;
+    position: absolute;
+    animation: arrow .8s infinite   ;
+    animation-direction:alternate-reverse;
+    top:0px;
+    left: 10px;
+}
+@keyframes arrow{
+    0%{
+        top:10px;
+        /* font-size: 36px; */
 
-   
+        
+    }
+    100%{
+        top:-5px;
+        /* font-size: 20px; */
+    }
+    
 }
 

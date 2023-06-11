@@ -10,6 +10,7 @@ import Voter from "./pages/Voter"
 import VotingArea from "./pages/VotingArea"
 import Login from "./pages/Login"
 import UserManual from "./pages/UserManual"
+import CastVote from "./pages/CastVote"
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/result" element={<Result />} />
         <Route path="/voter" element={<Voter/>}/>
         <Route path="/votingArea" element={<VotingArea/>}/>
+        <Route path="/castVote" element={<CastVote/>}/>
 
 
 

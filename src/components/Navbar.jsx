@@ -7,7 +7,7 @@ import {Avatar} from "@mui/material"
 
 const Container = styled.div`
 height: 70px;
-background-color: #225354;
+background: var(--navbar-color);
 `
 const Wrapper = styled.div`
 display: flex;

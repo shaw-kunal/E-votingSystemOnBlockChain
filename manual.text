@@ -19,3 +19,20 @@ fill form with id
 text votigArea
 
 
+cast your vote:
+----------------
+after registriton
+two -1)no vote
+    2) varify  your self 
+       - Emaild
+       - voter id 
+       - wallet address 
+       after which  new window which say to enter the code 
+       if every thing is ok then you can go for voting  
+       other wise sorry
+       
+       
+  
+
+
+
