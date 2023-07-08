@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./pages/About";
 import Home from "./pages/Home";
 import Registration from "./pages/Registration";
 import SingleCandidate from "./pages/SingleCandidate";
@@ -12,13 +11,14 @@ import Login from "./pages/Login";
 import UserManual from "./pages/UserManual";
 import CastVote from "./pages/CastVote";
 import GrievancesForm from "./pages/GrievancesForm";
+import About from "./pages/About";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        
         <Route path="/vote" element={<UserManual />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/login" element={<Login />} />
@@ -30,6 +30,7 @@ const App = () => {
         <Route path="/votingArea" element={<VotingArea />} />
         <Route path="/castVote" element={<CastVote />} />
         <Route path="/grievances" element={<GrievancesForm />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
