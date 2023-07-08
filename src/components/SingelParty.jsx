@@ -58,7 +58,7 @@ const SingelParty = () => {
             <VL />
             <Middle>
                 <PartyName>Bharrtiya Janta Party</PartyName>
-                <CandiName>Sunny Leone</CandiName>
+                <CandiName>Narendra Modi    </CandiName>
             </Middle>
             <VL />
             <Right>

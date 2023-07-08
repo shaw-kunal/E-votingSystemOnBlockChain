@@ -10,10 +10,10 @@ const CandidateCard = () => {
     <div className='ProfileCard'>
      <div className="profileImages">
         <img src="https://wallpapers.com/images/featured/lsjkr6wg7ctq97qv.jpg"alt="" />
-        <img src="https://i.pinimg.com/236x/71/0d/b1/710db188484e1e9467b72e0a090b4d73.jpg" alt="" style={{objectFit:"cover"}} />
+        {/* <img src="https://i.pinimg.com/236x/71/0d/b1/710db188484e1e9467b72e0a090b4d73.jpg" alt="" style={{objectFit:"cover"}} /> */}
      </div>
      <div className="profileName">
-        <span>Sunny Leone</span>
+        <span>Narendra Modi</span>
         <span>Bharita Janta Party</span>
      </div>
      <div className="followStatus">

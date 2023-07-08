@@ -101,12 +101,10 @@ font-weight: 600;
 color: var(--grey-color);
 border: none;
 box-shadow: #1cc7d0 0px 1px 3px 0px, #1cc7d0 0px 0px 0px 1px;
-
 border-radius:5px;
 box-shadow: rgba(28, 199, 208, 0.09) 0px 7px 9px 0px;
 outline: none;
 border: 2px solid #1cc7d0;
-
 `
 const LoginBtn = styled.button`
 
