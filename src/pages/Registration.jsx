@@ -3,16 +3,17 @@ import styled from 'styled-components'
 import BlankNavbar from '../components/BlankNavbar'
 import { Link } from 'react-router-dom'
 import { init } from 'ityped'
-import "./../cssDesign/RegistrationInput.css"
 
 const Container = styled.div`
 flex-direction: column;
-background-color: aliceblue;
+/* background-color: aliceb/lue; */
 `
 const Heading = styled.div`
 font-size: 30px;
-font-weight: 700px;
+font-weight: 500px;
 margin-bottom: 20px;
+color:#585757;
+
 `
 const MainContainer = styled.div`
 padding-top: 70px;
@@ -23,6 +24,8 @@ display:flex;
 border-radius: 50px;
 margin: 40px;
 overflow: hidden;
+height: 80vh;
+
 `
 
 const LeftContainer = styled.div`
@@ -54,7 +57,7 @@ text-align: center;
 
 const RightContainer = styled.div`
 flex:1;
-background-color: white;
+/* background-color: white; */
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 padding:40px;
 margin-right: 10px;
@@ -70,64 +73,57 @@ gap:20px;`
 
 
 const FormItem = styled.div`
-width:300px;
-display: flex;
-flex-direction: column;
-position: relative;
-`
-const FormLabel = styled.label`
-margin-bottom: 10px;
-color:black;
-font-weight: 500;
- font-size: 18px;
-`
-const FormInput = styled.input`
- padding: 12px;
- height: 20px;
- font-weight: 500;
- font-style: 20px;
- 
- border: 1px solid grey;
- border-radius: 5px;
- font-size: 17px;
- &:focus{
-   /* box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
-   outline: none;
-                }         
-`
-const RadioItem = styled.div`
-width: 100%;
-`
-const RadioGroup = styled.div`
-display:flex;
-gap: 10px;
-`
-
-const Lable = styled.p`
-margin-right:15px;`
-
-const RegisterBtn = styled.button`
-background-color: #1cc7d0;
-padding: 5px;
-width: 110px;
-font-size: 22px;
-border: none;
-color: white;
-transition: all 1s ease;
-border-radius: 5px;
-cursor: pointer;
+margin: auto;
 display: flex;
 align-items: center;
 justify-content: center;
-background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-gap:10px;
-transition: width 0.2s ease-in;
-
-&:hover{
-    background-image: linear-gradient(-120deg, #89f7fe 0%, #66a6ff 100%);
-    width: 150px; 
-}
+flex-direction: column;
+gap:30px;
 `
+
+const Input = styled.input`
+  background-color: white;
+  border:none;
+  padding: .75rem 2rem; /* Equivalent to px-5 py-4 */
+  border-radius: 1rem; /* Equivalent to rounded-xl */
+  width: 75%; /* Equivalent to w-3/4 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Equivalent to shadow-2xl */
+  font-size: 1.125rem; /* Equivalent to text-lg */
+  margin-bottom: 0.75rem; /* Equivalent to mb-3 */
+
+  &:focus{
+    outline:None;
+  }
+
+`
+
+
+const SubmitButton = styled.button`
+width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+  `
+
+
 const Registration = () => {
   const textRef = useRef();
   useEffect(() => {
@@ -162,67 +158,13 @@ const Registration = () => {
             <Heading>Create An Account</Heading>
             <StyledForm>
               <FormItem>
-                <FormLabel htmlFor='Fullname'>Full Name</FormLabel>
-                <FormInput  className='textBoxR' type='text' name="Fullname" placeholder=' ' />
-                <label className='inputLabelR' >Enter Your Name</label>
-              </FormItem>
-              <FormItem>
-                <FormLabel htmlFor='Email'>Email</FormLabel>
-                <FormInput className='textBoxR'  type='Email' name="Email" placeholder=' ' />
-                <label className='inputLabelR' >Email</label>
-
-              </FormItem>
-              <FormItem>
-                <FormLabel htmlFor='Phone'>Phone Number</FormLabel>
-                <FormInput className='textBoxR'  type='text' name="phone" placeholder=' ' />
-                <label className='inputLabelR' >Phone  Number</label>
-
-              </FormItem>
-              <FormItem>
-                <FormLabel htmlFor='State'>State</FormLabel>
-                <FormInput className='textBox'  type='text' name="State" placeholder=' ' />
-                <label className='inputLabelR' >State</label>
-
-              </FormItem>
-              <FormItem>
-                <FormLabel htmlFor='City'>City</FormLabel>
-                <FormInput className='textBoxR'  type='text' name="City" placeholder=' ' />
-                <label className='inputLabelR' >City</label>
-
-              </FormItem>
-              <FormItem>
-                <FormLabel htmlFor='Password'>Password</FormLabel>
-                <FormInput className='textBoxR'  type='text' name="Password" placeholder=' ' />
-                <label className='inputLabelR' >Password</label>
+                <Input type='text' placeholder='Username' />
+                <Input type='password' placeholder='password' />
+                <Input type='password' placeholder='Confirm Password' />
+                <SubmitButton>Register Now</SubmitButton>
               </FormItem>
 
-              <FormItem>
-                <FormLabel htmlFor='Confirmpwd'>Confirmpwd</FormLabel>
-                <FormInput  className='textBoxR' type='text' name="Confirmpwd" placeholder=' ' />
-                <label className='inputLabelR' >Enter Your Name</label>
-
-              </FormItem>
-              <FormItem>
-                <FormLabel htmlFor='Confirmpwd'>Confirmpwd</FormLabel>
-                <FormInput className='textBoxR' type='text' name="Confirmpwd" placeholder=' ' />
-                <label className='inputLabelR' >Confirm Password</label>
-
-              </FormItem>
-              <RadioItem>
-                <FormLabel htmlFor='Gender'>Gender</FormLabel>
-                <RadioGroup>
-                  <FormInput type='radio' name='male' /><Lable>Male</Lable>
-                  <FormInput type='radio' name='male' /><Lable>Female</Lable>
-                  <FormInput type='radio' name='male' /><Lable>Other</Lable>
-                  <FormInput type='radio' name='male' /><Lable>Prefer Not to say</Lable>
-
-                </RadioGroup>
-              </RadioItem>
-              <Link className="link" to="/login"><RegisterBtn>Register</RegisterBtn></Link>
             </StyledForm>
-
-
-
           </RightContainer>
 
         </MainInnerContainer>

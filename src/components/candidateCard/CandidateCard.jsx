@@ -9,8 +9,9 @@ const CandidateCard = () => {
   return (
     <div className='ProfileCard'>
      <div className="profileImages">
-        <img src="https://wallpapers.com/images/featured/lsjkr6wg7ctq97qv.jpg"alt="" />
-        {/* <img src="https://i.pinimg.com/236x/71/0d/b1/710db188484e1e9467b72e0a090b4d73.jpg" alt="" style={{objectFit:"cover"}} /> */}
+        <img src="https://wallpapers.com/images/featured/lsjkr6wg7ctq97qv.jpg"alt=""  style={{objectFit:"cover"}} />
+        <img src="https://cdn.narendramodi.in/cmsuploads/0.47358400_1637651639_modi_thumb.jpg" alt="" style={{objectFit:"cover"}} />
+    
      </div>
      <div className="profileName">
         <span>Narendra Modi</span>
@@ -21,13 +22,13 @@ const CandidateCard = () => {
         <div>
        <div className="follow">
             <span>State</span>
-            <span>karnataka</span>
+            <span>Gujarat</span>
         </div>
     
         <VL></VL>
         <div className="follow">
             <span>Constituency</span>
-            <span>Kopaal</span>
+            <span>Varanasi</span>
         </div>
        </div>
        <hr/>

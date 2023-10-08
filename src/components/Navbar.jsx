@@ -71,9 +71,11 @@ cursor: pointer;
 
 
 const Navbar = () => {
+
+
   return (
     <Container>
-      <Wrapper>
+      <Wrapper >
         <Left>
 
           <Img src={Logo} alt="logo"></Img>
@@ -81,7 +83,7 @@ const Navbar = () => {
           <h3>ELection Commission Of India</h3></Title>
       
         </Left>
-        <Center>
+        <Center >
           <Link className="link" to="/"><Item>Home</Item></Link>
           <Link className="link" to="/vote" ><Item>Vote</Item></Link>
           <Link className="link" to="/grievances"><Item>Grievances</Item></Link>
