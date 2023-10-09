@@ -10,7 +10,7 @@ import "./../cssDesign/input.css"
 const Container = styled.div`
 width: 100%;
 height: 100vh;
-/* background-image: url('https://images.unsplash.com/photo-1496868834840-5f4c98840aaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tncm91bmQlMjBpbWFnZSUyMGZvciUyMGRlc2t0b3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'); */
+background-image: url('https://images.unsplash.com/photo-1496868834840-5f4c98840aaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tncm91bmQlMjBpbWFnZSUyMGZvciUyMGRlc2t0b3B8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
